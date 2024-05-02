@@ -3,7 +3,7 @@ import React from 'react'
 function HomeRight() {
   return (
     <>
-      <div className="hidden md:flex flex-col p-4 border-l-2 h-screen">
+      <div className="hidden lg:flex flex-col p-4 w-1/3 h-screen">
         <form class="flex items-center max-w-full mx-auto ">
           <label for="simple-search" class="sr-only">
             Search
@@ -41,7 +41,9 @@ function HomeRight() {
           </button>
         </form>
         <div className="w-full max-h-screen mt-5">
-          <h2 className="text-3xl font-bold">What's trending...</h2>
+          <h2 className="text-3xl font-bold jersey-15-regular ">
+            What's trending...
+          </h2>
         </div>
       </div>
     </>

@@ -6,7 +6,15 @@ export default {
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sm': {min:'320px', max:'1024px'},
+        'lg': {min:'1024px', max:'1880px'},
+        
+        // => @media (min-width: 992px) { ... }
+      },
+    },
+    
   },
    plugins: [
         require('flowbite/plugin')

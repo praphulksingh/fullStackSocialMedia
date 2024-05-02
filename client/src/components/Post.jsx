@@ -2,15 +2,15 @@ import React from 'react'
 
 function Post() {
   return (
-    <div className="min-h-[500px] bg-white flex items-center justify-center">
-      <div className="w-80 bg-white rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
+    <div className="min-h-screen sm:h-screen/2 bg-white pt-6 flex items-center justify-center">
+      <div className="w-auto min-h-screen bg-white rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform  cursor-pointer">
         <div className="flex items-center mb-2 space-x-4">
           <img
             className="w-10 rounded-full ml-2"
             src="https://www.adobe.com/express/create/media_1bcd514348a568faed99e65f5249895e38b06c947.jpeg?width=2000&format=webply&optimize=medium"
             alt="David"
           />
-          <div>
+          <div className="w-[85%]">
             <h1 className="mb-1 text-xl font-bold text-gray-700">
               Stuar Manson
             </h1>
@@ -18,7 +18,8 @@ function Post() {
               #Publicado hace 2 horas
             </p>
           </div>
-          <span>
+
+          <span className=" justify-end ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6 hover:text-blue-400 transition duration-200"
@@ -87,9 +88,9 @@ function Post() {
         </div>
         <div>
           <img src="" alt="" />
-          <div className="px-10">
+          <div className="px-10 ">
             <input
-              className=" text-sm font-thin  px-5 py-2 mb-2 bg-gray-50 outline-none rounded-full border-1"
+              className=" text-sm font-thin w-[90%] px-5 py-2 mb-2 bg-gray-50 outline-none rounded-full border-1"
               type="text"
               placeholder="Enter your comment"
             />

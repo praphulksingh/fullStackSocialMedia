@@ -8,16 +8,17 @@ function HomePage() {
   return (
     <>
       <div className="flex flex-row">
-        <div className="w-64">
+        <div className="lg:w-1/3 ">
           <Header />
         </div>
-        <div className="h-full border-l border-gray-300"></div>
-        <div className=" w-[1000px]">
+        <div className=" w-2/3 grid sm:justify-center sm:w-[90%]">
           <Stories />
-          <hr />
+
           <Post />
         </div>
-        <HomeRight className="float-right hidden md:block" />
+      
+          <HomeRight className="float-right" />
+       
       </div>
     </>
   );
